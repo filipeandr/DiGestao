@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import validacao.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Inicial.InicioView">
+    <children>
+        <ImageView fitHeight="1440.0" fitWidth="2560.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../imagens/telas/Fundo.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="10.0" layoutY="10.0" prefHeight="93.0" prefWidth="1366.0" style="-fx-border-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <BorderPane prefHeight="768.0" prefWidth="1322.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <left>
+                <Pane prefHeight="690.0" prefWidth="294.0" BorderPane.alignment="CENTER" />
+            </left>
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER" />
+            </center>
+            <top>
+                <AnchorPane prefHeight="92.0" prefWidth="1366.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ScrollPane layoutX="294.0" prefHeight="79.0" prefWidth="1071.0" style="-fx-fit-to-height: true; -fx-fit-to-width: true;" stylesheets="@../FuncOperacoesCaixa/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                            <content>
+                                <AnchorPane prefHeight="77.0" prefWidth="1069.0" style="-fx-background-color: transparent;">
+                                    <children>
+                                        <Button fx:id="usuario" layoutX="995.0" layoutY="12.0" mnemonicParsing="false" onAction="#clicar" prefHeight="34.0" prefWidth="35.0" style="-fx-background-radius: 50;" stylesheets="@../FuncOperacoesCaixa/style.css" AnchorPane.rightAnchor="9.0">
+                                            <graphic>
+                                                <ImageView fitHeight="49.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../imagens/botoes/Usuário.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <ImageView fitHeight="46.0" fitWidth="9.0" layoutX="821.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="821.0" AnchorPane.rightAnchor="239.0" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                        <ImageView fitHeight="63.0" fitWidth="213.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../imagens/botoes/Logo@3x.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </top>
+        </BorderPane>
+        <StackPane layoutY="92.0" prefHeight="558.0" prefWidth="295.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="92.0">
+            <children>
+                <ScrollPane prefHeight="690.0" prefWidth="309.0" stylesheets="@style.css">
+                    <content>
+                        <Pane prefHeight="672.0" prefWidth="275.0" style="-fx-background-color: transparent;">
+                            <children>
+                                <Button fx:id="produtos" alignment="BASELINE_LEFT" layoutX="-3.0" layoutY="142.0" mnemonicParsing="false" onAction="#clicar" prefHeight="70.0" prefWidth="294.0" stylesheets="@style.css">
+                                    <graphic>
+                                        <ImageView fitHeight="49.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../imagens/botoes/Botão%20Produtos@3x.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="financeiro" alignment="BASELINE_LEFT" layoutX="-3.0" layoutY="225.0" mnemonicParsing="false" onAction="#clicar" prefHeight="70.0" prefWidth="294.0" stylesheets="@style.css">
+                                    <graphic>
+                                        <ImageView fitHeight="42.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../imagens/botoes/Botão%20Financeiro@3x.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                                <Group layoutX="13.0" layoutY="39.0">
+                                    <children>
+                                        <ImageView fitHeight="72.0" fitWidth="67.0" layoutX="97.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../imagens/botoes/Preparo@3x.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fitHeight="72.0" fitWidth="67.0" layoutX="194.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../imagens/botoes/Preparo@3x.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fitHeight="72.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../imagens/botoes/Preparo@3x.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Button fx:id="mesas" contentDisplay="TOP" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#clicar" prefHeight="61.0" prefWidth="61.0" style="-fx-background-radius: 20;" stylesheets="@../FuncOperacoesCaixa/style.css" text="Mesas">
+                                            <graphic>
+                                                <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../imagens/botoes/Mesas.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <font>
+                                                <Font name="Verdana Bold" size="10.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="balcao" contentDisplay="TOP" layoutX="98.0" layoutY="1.0" mnemonicParsing="false" onAction="#clicar" prefHeight="61.0" prefWidth="61.0" style="-fx-background-radius: 20;" stylesheets="@../FuncOperacoesCaixa/style.css" text="Balcão">
+                                            <graphic>
+                                                <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../imagens/botoes/Balcão.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <font>
+                                                <Font name="Verdana Bold" size="10.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="preparo" contentDisplay="TOP" layoutX="195.0" layoutY="1.0" mnemonicParsing="false" onAction="#clicar" prefHeight="61.0" prefWidth="61.0" style="-fx-background-radius: 20;" stylesheets="@../FuncOperacoesCaixa/style.css" text="Preparo">
+                                            <graphic>
+                                                <ImageView fitHeight="30.0" fitWidth="30.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../imagens/botoes/Preparo.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <font>
+                                                <Font name="Verdana Bold" size="10.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </Group>
+                            </children>
+                        </Pane>
+                    </content>
+                </ScrollPane>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

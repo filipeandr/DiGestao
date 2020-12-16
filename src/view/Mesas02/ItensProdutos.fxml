@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="78.0" prefWidth="285.0" style="-fx-border-color: black; -fx-border-radius: 8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Mesas02.ItensProdutos01View">
+   <children>
+      <Label fx:id="imagemProduto" layoutX="14.0" layoutY="12.0" prefHeight="52.0" prefWidth="57.0" />
+      <Label fx:id="idMesa" focusTraversable="false" visible="false" />
+      <Label fx:id="idProduto" focusTraversable="false" visible="false" />
+      <GridPane hgap="55.0" layoutX="81.0" layoutY="3.0" prefHeight="69.0" prefWidth="203.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="6.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.0" minWidth="10.0" prefWidth="108.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="nomeProduto" editable="false" focusTraversable="false" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: transparent;" stylesheets="@style.css" text="Bebidas" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="precoProduto" alignment="CENTER_RIGHT" editable="false" focusTraversable="false" opacity="0.7" prefHeight="21.0" prefWidth="46.0" style="-fx-background-color: transparent;" stylesheets="@style.css" text=" R$ 3,50" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button fx:id="adicionarProduto" layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#adicionarProduto" prefHeight="33.0" prefWidth="275.0" style="-fx-background-color: transparent;" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

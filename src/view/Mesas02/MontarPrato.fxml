@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="78.0" prefWidth="285.0" style="-fx-border-color: black; -fx-border-radius: 8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Mesas02.MontarPratoView">
+   <children>
+      <Label fx:id="idProduto" visible="false" />
+      <ImageView fitHeight="53.0" fitWidth="62.0" layoutX="13.0" layoutY="13.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../imagens/produtos/Monte%20seu%20Prato.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="idMesa" focusTraversable="false" visible="false" />
+      <ImageView fitHeight="61.0" fitWidth="62.0" layoutX="8.0" layoutY="8.0" opacity="0.8" pickOnBounds="true" preserveRatio="true" />
+      <GridPane hgap="55.0" layoutX="81.0" layoutY="3.0" prefHeight="69.0" prefWidth="203.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="6.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.0" minWidth="10.0" prefWidth="108.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField editable="false" focusTraversable="false" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: transparent;" stylesheets="@style.css" text="Monte seu prato" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </TextField>
+            <TextField alignment="CENTER_RIGHT" focusTraversable="false" opacity="0.7" prefHeight="21.0" prefWidth="46.0" style="-fx-background-color: transparent;" stylesheets="@style.css" text="A partir de R$ 12,00" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button fx:id="adicionarProduto" layoutX="555.0" layoutY="8.0" mnemonicParsing="false" onAction="#adicionarProduto" prefHeight="33.0" prefWidth="275.0" style="-fx-background-color: transparent;" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

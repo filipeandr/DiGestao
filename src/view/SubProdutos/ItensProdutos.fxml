@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import validacao.*?>
+
+<AnchorPane prefHeight="79.0" prefWidth="725.0" style="-fx-border-radius: 20; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../SubCadastrar/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SubProdutos.ItensProdutosView">
+    <children>
+      <ImageView fitHeight="79.0" fitWidth="200.0" layoutX="371.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+        <TextField fx:id="idProduto" prefHeight="25.0" prefWidth="3.0" />
+      <Label fx:id="imagemProduto" layoutX="14.0" layoutY="9.0" prefHeight="58.0" prefWidth="58.0" />
+        <Button fx:id="excluir" layoutX="637.0" layoutY="10.0" mnemonicParsing="false" onAction="#editarOuExcluir" prefHeight="58.0" prefWidth="58.0" style="-fx-border-radius: 80; -fx-border-color: black; -fx-background-radius: 80;" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="10.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../imagens/png/Excluir.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TextField fx:id="idCategoria" layoutX="100.0" layoutY="31.0" prefHeight="25.0" prefWidth="42.0" visible="false" />
+        <Button fx:id="editar" layoutX="564.0" layoutY="11.0" mnemonicParsing="false" onAction="#editarOuExcluir" prefHeight="58.0" prefWidth="58.0" style="-fx-border-radius: 80; -fx-border-color: black; -fx-background-radius: 80;" AnchorPane.rightAnchor="103.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../imagens/png/Editar.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <GridPane hgap="55.0" layoutX="79.0" layoutY="8.0" prefHeight="58.0" prefWidth="665.0" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="259.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.0" minWidth="10.0" prefWidth="299.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="185.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.0" minWidth="0.0" prefWidth="150.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextField fx:id="nomeProduto" editable="false" prefHeight="25.0" prefWidth="199.0" GridPane.valignment="TOP">
+                    <font>
+                        <Font name="Georgia" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="categoriaProduto" editable="false" opacity="0.7" prefHeight="19.0" prefWidth="199.0" GridPane.valignment="BOTTOM">
+                    <font>
+                        <Font name="Georgia Bold" size="14.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="5.0" left="12.0" />
+                    </padding>
+                </TextField>
+                <TextField fx:id="preco" editable="false" prefHeight="25.0" prefWidth="199.0" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="Georgia" size="16.0" />
+                    </font>
+                </TextField>
+                <IntTextField fx:id="estoque" onAction="#editarEstoque" prefHeight="31.0" prefWidth="0.0" GridPane.columnIndex="2">
+                    <font>
+                        <Font name="Georgia" size="16.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </IntTextField>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

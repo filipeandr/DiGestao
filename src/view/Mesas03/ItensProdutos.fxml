@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="76.0" prefWidth="387.0" style="-fx-border-radius: 20; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../SubCadastrar/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Mesas03.ItensProdutosView">
+   <children>
+      <Label fx:id="imagemProduto" layoutX="20.0" layoutY="14.0" prefHeight="47.0" prefWidth="53.0" />
+      <GridPane hgap="55.0" layoutX="85.0" layoutY="8.0" prefHeight="58.0" prefWidth="226.0" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="67.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.0" minWidth="10.0" prefWidth="108.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="nomeProduto" editable="false" focusTraversable="false" prefHeight="25.0" prefWidth="199.0" text="Bebidas" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="precoProduto" editable="false" focusTraversable="false" opacity="0.7" prefHeight="21.0" prefWidth="46.0" text="1 X R$ 3,50" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="12.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,78 @@
+.button
+{
+    -fx-background-color : transparent;
+    -fx-text-fill :#4c4c4c;
+}
+.button:hover{
+    -fx-background-color : #ededed; 
+}
+.button:pressed
+{
+    -fx-background-color : #b6b6b6;
+}
+
+.scroll-pane {
+    -fx-background-color:transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #e7e7e7;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: transparent;
+}
+
+.text-field{
+    -fx-background-color : white;
+    -fx-text-fill :#4c4c4c;
+}
+
+.check-box .box {
+
+    -fx-background-color: white;
+    -fx-border-color:grey;
+    -fx-border-radius:3px;
+    -fx-padding: 10px;
+
+}
+
+.check-box:selected .mark {
+
+    -fx-background-color: white;
+    -fx-padding: 10px;
+
+}
+
+.check-box:selected .box {
+
+    -fx-background-color: #28a3f4;
+    -fx-padding: 10px;
+}
+
+.scroll-pane > .viewport {  
+    -fx-background-color: transparent;
+}
+
+scroll-pane {
+    -fx-fit-to-height: true;
+    -fx-fit-to-width: true;
+}
